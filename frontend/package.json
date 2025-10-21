@@ -1,0 +1,38 @@
+{
+  "name": "sistema-muebles-frontend",
+  "version": "1.0.0",
+  "description": "Frontend para sistema de venta de muebles personalizados",
+  "private": true,
+  "scripts": {
+    "dev": "vite",                    // Inicia el servidor de desarrollo con hot reload
+    "build": "vite build",            // Construye la aplicación para producción
+    "preview": "vite preview",        // Previsualiza la build de producción localmente
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore", // Ejecuta ESLint para encontrar y corregir errores
+    "format": "prettier --write src/" // Formatea el código usando Prettier
+  },
+  "dependencies": {
+    "vue": "^3.3.8",                           // Framework principal de Vue.js 3
+    "vue-router": "^4.2.5",                    // Router oficial para navegación SPA
+    "pinia": "^2.1.7",                         // Store de estado global (reemplaza Vuex)
+    "axios": "^1.6.2",                         // Cliente HTTP para llamadas a API
+    "vue-toastification": "^2.0.0-rc.5",      // Notificaciones toast elegantes
+    "@headlessui/vue": "^1.7.16",             // Componentes UI accesibles sin estilos
+    "@heroicons/vue": "^2.0.18",              // Iconos SVG de Heroicons
+    "chart.js": "^4.4.0",                     // Librería para gráficos y charts
+    "vue-chartjs": "^5.2.0",                  // Wrapper de Chart.js para Vue
+    "date-fns": "^2.30.0",                    // Utilidades para manejo de fechas
+    "vee-validate": "^4.11.8",                // Validación de formularios
+    "yup": "^1.3.3"                           // Esquemas de validación para formularios
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",           // Plugin de Vite para soporte de Vue.js
+    "vite": "^5.0.0",                         // Build tool rápido y moderno
+    "eslint": "^8.49.0",                      // Linter para encontrar errores en JavaScript
+    "eslint-plugin-vue": "^9.17.0",          // Plugin de ESLint específico para Vue
+    "@vue/eslint-config-prettier": "^8.0.0", // Configuración ESLint compatible con Prettier
+    "prettier": "^3.0.3",                    // Formateador de código automático
+    "autoprefixer": "^10.4.16",              // Agrega prefijos CSS automáticamente
+    "postcss": "^8.4.32",                    // Procesador de CSS
+    "tailwindcss": "^3.3.6"                  // Framework CSS utility-first
+  }
+}
